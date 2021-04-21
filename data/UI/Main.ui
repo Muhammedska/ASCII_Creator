@@ -48,16 +48,6 @@
    <enum>QTabWidget::Triangular</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGraphicsView" name="Logo">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>121</width>
-      <height>121</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="import_image">
     <property name="geometry">
      <rect>
@@ -87,7 +77,7 @@
      <string>Convert to ASCII İmage File</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Saveasimg">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -114,6 +104,9 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="minimum">
+     <number>50</number>
+    </property>
     <property name="maximum">
      <number>1000000000</number>
     </property>
@@ -123,27 +116,17 @@
      <rect>
       <x>10</x>
       <y>290</y>
-      <width>231</width>
+      <width>91</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>17</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="text">
      <string>New Width :</string>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>430</y>
-      <width>231</width>
-      <height>181</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -164,14 +147,109 @@
      <string>Your İmage</string>
     </property>
    </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Your_image">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>231</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <widget class="QPlainTextEdit" name="ascii_output">
     <property name="geometry">
      <rect>
       <x>250</x>
       <y>0</y>
       <width>891</width>
-      <height>611</height>
+      <height>621</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>-1</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+    </property>
+    <property name="undoRedoEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QPlainTextEdit::NoWrap</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="overwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabStopWidth">
+     <number>1000000024</number>
+    </property>
+    <property name="cursorWidth">
+     <number>1</number>
     </property>
    </widget>
   </widget>
